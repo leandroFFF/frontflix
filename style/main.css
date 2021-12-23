@@ -1,0 +1,233 @@
+
+/*=================================================================*/
+                            /*RESET*/
+/*=================================================================*/
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*=================================================================*/
+                            /*BODY*/
+/*=================================================================*/
+
+body {
+    background-color: #ccc;
+}
+
+/*=================================================================*/
+                        /*MENU PRINCIPAL*/
+/*=================================================================*/
+
+.principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+
+}
+
+.logo {
+    color: red;
+    margin-left: 20px;
+    padding: 5px;
+}
+
+.menu ul{
+    display: flex;
+    justify-content: space-between;
+    color: whitesmoke;
+    width: 300px;
+}
+
+.menu ul li {
+    list-style-type: none;
+}
+
+.menu ul li a {
+    text-transform: none;
+    text-decoration: none;
+    color: rgba(211, 211, 211, 0.356);
+}
+
+.menu ul li a:hover {
+    color: white;
+}
+
+#lupa {
+    background-color: rgba(211, 211, 211, 0.356);
+    border-radius: 50%;
+    padding: 2px;
+    margin-right: 20px;
+}
+
+#lupa:hover {
+    background-color: white;
+    cursor: pointer;
+}
+
+/*=================================================================*/
+                            /*BANNER*/
+/*=================================================================*/
+
+.container img {
+    width: 100%;
+}
+
+/*=================================================================*/
+                            /*SUBMENU*/
+/*=================================================================*/
+
+.submenu ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 80px;
+}
+
+.submenu ul li {
+    list-style-type: none;
+}
+
+.submenu a {
+    text-decoration: none;
+    text-transform: none;
+    color: rgba(211, 211, 211, 0.356);
+    background-color: black;
+    padding: 30px 40px;
+    position: relative;
+}
+
+.submenu a:hover {
+    color: white;
+    border-radius: 5px;
+}
+
+.submenu #html:hover{
+    background-color: orangered;
+}
+
+.submenu #css:hover{
+    background-color: blue;
+}
+
+.submenu #js:hover{
+    background-color: yellow;
+    color: black;
+}
+
+.submenu #bootstrap:hover{
+    background-color: purple;
+}
+
+.submenu #angular:hover{
+    background-color: red;
+}
+
+.submenu #nodejs:hover{
+    background-color: green;
+}
+
+.submenu #flutter:hover{
+    background-color: lightskyblue;
+}
+
+
+/*=================================================================*/
+                        /*CURSOS*/
+/*=================================================================*/
+
+.capas {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.capas .capas01, .capas .capas02, .capas .capas03 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 15px;
+}
+
+.curso {
+    background-color: white;
+    padding: 50px 50px;
+    border-radius: 8px;
+}
+
+
+/*=================================================================*/
+                        /*NOTÍCIAS*/
+/*=================================================================*/
+.tema {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tema h1 {
+    margin: 15px auto;
+}
+
+.tema hr {
+    width: 80%;
+}
+
+.noticias {
+    display: flex;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 0.9rem;
+}
+
+.noticias div {
+    background-color: #ffe;
+    border-radius: 8px;
+    margin: 0 5px;
+    padding: 5px;
+}
+
+.noticias a {
+    text-transform: none;
+    text-decoration: none;
+    padding: 10px;
+    color: black;
+}
+
+.noticias h3 {
+    margin: 5px;
+}
+
+.noticias p {
+    text-align: justify;
+    margin: 5px;
+}
+
+.noticias button {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: 3% 0 0 10%;
+    padding: 5px;
+    border-radius: 8px;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+/*=================================================================*/
+                        /*MEDIA QUERY*/
+/*=================================================================*/
+
+@media all and (max-width: 900px) {
+    .submenu a {
+        padding: 30px 20px;
+    }
+
+}
